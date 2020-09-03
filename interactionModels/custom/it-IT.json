@@ -1,0 +1,384 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "corona virus",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "StatisticsRegionIntent",
+          "slots": [
+            {
+              "name": "FieldSlot",
+              "type": "FieldSlotType"
+            },
+            {
+              "name": "LocationSlot",
+              "type": "RegionSlotType",
+              "samples": [
+                "in tutta la {LocationSlot}",
+                "in tutta {LocationSlot}",
+                "a {LocationSlot}",
+                "in {LocationSlot}",
+                "{LocationSlot}"
+              ]
+            }
+          ],
+          "samples": [
+            "{FieldSlot} in {LocationSlot}",
+            "{FieldSlot}",
+            "Quanti {FieldSlot} sono stati fatti in {LocationSlot}",
+            "Quanti {FieldSlot} sono stati eseguiti in {LocationSlot}",
+            "Quanti {FieldSlot} hanno fatto in {LocationSlot}",
+            "Quanti {FieldSlot} hanno eseguito in {LocationSlot}",
+            "Quanti {FieldSlot} ci sono stati in {LocationSlot}",
+            "Quanti {FieldSlot} ci sono in {LocationSlot}",
+            "Quanti {FieldSlot} abbiamo {LocationSlot}",
+            "Quante persone {FieldSlot} ci sono in {LocationSlot}",
+            "Quante persone {FieldSlot} abbiamo {LocationSlot}",
+            "Quante persone sono {FieldSlot} in {LocationSlot}",
+            "Quante persone sono state {FieldSlot} in {LocationSlot}",
+            "Quanti sono i {FieldSlot} in {LocationSlot}",
+            "Quanto è il numero dei {FieldSlot} in {LocationSlot}",
+            "Quant\u0027è il numero dei {FieldSlot} in {LocationSlot}",
+            "Qual\u0027è il numero dei {FieldSlot} in {LocationSlot}",
+            "Quale è il numero dei {FieldSlot} in {LocationSlot}",
+            "Quante sono le persone {FieldSlot} in {LocationSlot}",
+            "Quante sono le persone in {FieldSlot} in {LocationSlot}",
+            "Quante sono in {FieldSlot} in {LocationSlot}",
+            "Quante sono {FieldSlot} in {LocationSlot}",
+            "Quante persone sono attualmente {FieldSlot} in {LocationSlot}",
+            "Quante persone sono al momento {FieldSlot} in {LocationSlot}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "id": "tamponi",
+              "name": {
+                "value": "tamponi"
+              }
+            },
+            {
+              "id": "totale_casi",
+              "name": {
+                "value": "totale casi",
+                "synonyms": [
+                  "positivi",
+                  "positive",
+                  "malate",
+                  "ammalate",
+                  "infette",
+                  "infetti",
+                  "ammalati",
+                  "malati",
+                  "casi totali",
+                  "casi",
+                  "contagiati",
+                  "contagiate",
+                  "contagi"
+                ]
+              }
+            },
+            {
+              "id": "deceduti",
+              "name": {
+                "value": "deceduti",
+                "synonyms": [
+                  "decedute",
+                  "morte",
+                  "morti"
+                ]
+              }
+            },
+            {
+              "id": "dimessi_guariti",
+              "name": {
+                "value": "dimessi guariti",
+                "synonyms": [
+                  "guarite",
+                  "dimesse ",
+                  "dimesse guarite",
+                  "guariti",
+                  "dimessi"
+                ]
+              }
+            },
+            {
+              "id": "nuovi_attualmente_positivi",
+              "name": {
+                "value": "nuovi positivi",
+                "synonyms": [
+                  "risultati positivi",
+                  "risultate positive",
+                  "positivi oggi",
+                  "nuovi casi",
+                  "nuove positive",
+                  "nuovi positivi"
+                ]
+              }
+            },
+            {
+              "id": "isolamento_domiciliare",
+              "name": {
+                "value": "Isolamento domiciliare",
+                "synonyms": [
+                  "isolamento"
+                ]
+              }
+            },
+            {
+              "id": "totale_ospedalizzati",
+              "name": {
+                "value": "totale ospedalizzati",
+                "synonyms": [
+                  "all\u0027ospedale",
+                  "ospedalizzate",
+                  "totale ospedalizzate",
+                  "ospedalizzati"
+                ]
+              }
+            },
+            {
+              "id": "terapia_intensiva",
+              "name": {
+                "value": "terapia intensiva",
+                "synonyms": [
+                  "terapia"
+                ]
+              }
+            },
+            {
+              "id": "ricoverati_con_sintomi",
+              "name": {
+                "value": "ricoverati con sintomi",
+                "synonyms": [
+                  "ricoverate",
+                  "ricoverati",
+                  "ricoverate con sintomi"
+                ]
+              }
+            }
+          ],
+          "name": "FieldSlotType"
+        },
+        {
+          "values": [
+            {
+              "id": "italia",
+              "name": {
+                "value": "Italia",
+                "synonyms": [
+                  "tutta la nazione",
+                  "nazione"
+                ]
+              }
+            },
+            {
+              "id": "veneto",
+              "name": {
+                "value": "Veneto"
+              }
+            },
+            {
+              "id": "valleaosta",
+              "name": {
+                "value": "Valle d\u0027Aosta",
+                "synonyms": [
+                  "val d\u0027aosta",
+                  "valle d\u0027aosta"
+                ]
+              }
+            },
+            {
+              "id": "umbria",
+              "name": {
+                "value": "Umbria"
+              }
+            },
+            {
+              "id": "trento",
+              "name": {
+                "value": "Trento"
+              }
+            },
+            {
+              "id": "toscana",
+              "name": {
+                "value": "Toscana"
+              }
+            },
+            {
+              "id": "sicilia",
+              "name": {
+                "value": "Sicilia"
+              }
+            },
+            {
+              "id": "sardegna",
+              "name": {
+                "value": "Sardegna"
+              }
+            },
+            {
+              "id": "puglia",
+              "name": {
+                "value": "Puglia"
+              }
+            },
+            {
+              "id": "piemonte",
+              "name": {
+                "value": "Piemonte"
+              }
+            },
+            {
+              "id": "molise",
+              "name": {
+                "value": "Molise"
+              }
+            },
+            {
+              "id": "marche",
+              "name": {
+                "value": "Marche"
+              }
+            },
+            {
+              "id": "lombardia",
+              "name": {
+                "value": "Lombardia"
+              }
+            },
+            {
+              "id": "liguria",
+              "name": {
+                "value": "Liguria"
+              }
+            },
+            {
+              "id": "lazio",
+              "name": {
+                "value": "Lazio"
+              }
+            },
+            {
+              "id": "friuliveneziagiulia",
+              "name": {
+                "value": "Friuli Venezia Giulia",
+                "synonyms": [
+                  "friuli"
+                ]
+              }
+            },
+            {
+              "id": "emiliaromagna",
+              "name": {
+                "value": "Emilia Romagna",
+                "synonyms": [
+                  "emilia",
+                  "romagna"
+                ]
+              }
+            },
+            {
+              "id": "campania",
+              "name": {
+                "value": "Campania"
+              }
+            },
+            {
+              "id": "calabria",
+              "name": {
+                "value": "Calabria"
+              }
+            },
+            {
+              "id": "bolzano",
+              "name": {
+                "value": "Bolzano"
+              }
+            },
+            {
+              "id": "basilicata",
+              "name": {
+                "value": "Basilicata"
+              }
+            },
+            {
+              "id": "abruzzo",
+              "name": {
+                "value": "Abruzzo"
+              }
+            }
+          ],
+          "name": "RegionSlotType"
+        }
+      ]
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "StatisticsRegionIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "FieldSlot",
+              "type": "FieldSlotType",
+              "elicitationRequired": false,
+              "confirmationRequired": false,
+              "prompts": {}
+            },
+            {
+              "name": "LocationSlot",
+              "type": "RegionSlotType",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1047134971509.1403489562420"
+              }
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.1047134971509.1403489562420",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Posso darti questa informazione per tutta l\u0027Italia o per una specifica regione. Puoi dirmi Italia o, ad esempio, Veneto"
+          },
+          {
+            "type": "PlainText",
+            "value": "Posso darti questa informazione per tutta l\u0027Italia o per una specifica regione. Puoi dirmi Italia o, ad esempio, Emilia Romagna"
+          },
+          {
+            "type": "PlainText",
+            "value": "Posso darti questa informazione per tutta l\u0027Italia o per una specifica regione. Puoi dirmi Italia o, ad esempio, Lombardia"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "48"
+}

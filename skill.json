@@ -1,0 +1,126 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "it-IT": {
+          "summary": "Posso darti informazioni aggiornate sul numero di persone contagiate, guarite, morte, in terapia intensiva e molto altro.",
+          "examplePhrases": [
+            "Alexa, apri corona virus",
+            "Alexa, chiedi a corona virus quanti contagi ci sono stati in italia.",
+            "Alexa, chiedi a corona virus quante sono le persone in terapia intensiva in Lombardia?"
+          ],
+          "keywords": [
+            "virus",
+            "corona",
+            "coronavirus",
+            "covid-19",
+            "covid19",
+            "covid",
+            "emergenza",
+            "aiuto",
+            "pandemia",
+            "infezione",
+            "morte",
+            "smart",
+            "home",
+            "oroscopo",
+            "meteo",
+            "scorregge",
+            "rutti",
+            "fox",
+            "tv",
+            "musica",
+            "ricette",
+            "asmr",
+            "giochi",
+            "trivia",
+            "gioco",
+            "traduttore",
+            "inglese",
+            "escape",
+            "Philips",
+            "Spotify"
+          ],
+          "name": "Coronavirus: aggiornamenti in tempo reale",
+          "description": "Questa skill ti fornisce informazioni aggiornate in tempo reale riguardanti il Coronavirus (Covid-19).\n\nPronuncia \u0027Alexa, apri corona virus\u0027 per avviare la skill. \n\nSuccessivamente potrai chiedere:\n- Quanti contagi ci sono stati?\n- Quanti nuovi casi ci sono stati?\n- Quanti tamponi sono stati eseguiti?\n- Quante sono le persone risultate positive?\n- Quante persone sono guarite?\n- Qual\u0027è il numero dei morti?\n- Quante sono le persone in terapia intensiva?\n\nLa skill può fornirti queste informazioni per tutte l\u0027Italia, o per una specifica regione. \nPuoi quindi fare ad Alexa una richiesta specifica, pronunciando ad esempio:\n- Alexa, chiedi a corona virus quanti contagi ci sono stati in italia.\n- Alexa, chiedi a corona virus quante sono le persone in terapia intensiva in Lombardia?\n- Alexa, chiedi a corona virus quanti nuovi casi ci sono stati in Veneto oggi?\n\nI dati vengono aggiornati quotidianamente alle 18:30 (successivamente la conferenza stampa del Capo Dipartimento).\n\nTutte le informazioni fornite dalla skill sono reperite direttamente dal portale del Ministero della salute al solo scopo informativo.\n\nNON CI ASSUMIAMO ALCUNA RESPONSABILITÀ PER CONSEGUENZE DIRETTAMENTE O INDIRETTAMENTE LEGATE A QUALSIASI AZIONE O MANCATA AZIONE INTRAPRESA O MENO SULLA BASE DELLE INFORMAZIONI, DEI SERVIZI O DI ALTRI MATERIALI FORNITI DALLA SKILL.",
+          "smallIconUri": "file://assets/images/it-IT_smallIconUri.png",
+          "updatesDescription": "Abbiamo aggiunto molte nuove funzionalità; Adesso la skill può fornire i dati aggiornati quotidianamente sulla situazione in Italia.\nPuoi chiedere, ad esempio: \"Alexa, chiedi a corona virus quanti contagi ci sono stati in italia\"",
+          "largeIconUri": "file://assets/images/it-IT_largeIconUri.png"
+        }
+      },
+      "automaticDistribution": {
+        "isActive": false
+      },
+      "isAvailableWorldwide": false,
+      "testingInstructions": "Alexa, chiedi a corona virus quante sono le persone in terapia intensiva in Lombardia?",
+      "category": "EDUCATION_AND_REFERENCE",
+      "distributionCountries": [
+        "IT"
+      ]
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:391274265605:function:0918636a-7b03-4708-aafb-e909ec3de903:Release_1"
+        },
+        "interfaces": [
+          {
+            "supportedViewports": [
+              {
+                "minHeight": 480,
+                "mode": "HUB",
+                "shape": "ROUND",
+                "maxHeight": 480,
+                "minWidth": 480,
+                "maxWidth": 480
+              },
+              {
+                "minHeight": 600,
+                "mode": "HUB",
+                "shape": "RECTANGLE",
+                "maxHeight": 600,
+                "minWidth": 1024,
+                "maxWidth": 1024
+              },
+              {
+                "minHeight": 800,
+                "mode": "HUB",
+                "shape": "RECTANGLE",
+                "maxHeight": 800,
+                "minWidth": 1280,
+                "maxWidth": 1280
+              },
+              {
+                "minHeight": 540,
+                "mode": "TV",
+                "shape": "RECTANGLE",
+                "maxHeight": 540,
+                "minWidth": 960,
+                "maxWidth": 960
+              },
+              {
+                "minHeight": 480,
+                "mode": "HUB",
+                "shape": "RECTANGLE",
+                "maxHeight": 480,
+                "minWidth": 960,
+                "maxWidth": 960
+              }
+            ],
+            "type": "ALEXA_PRESENTATION_APL"
+          }
+        ]
+      }
+    },
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "it-IT": {}
+      },
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    }
+  }
+}
