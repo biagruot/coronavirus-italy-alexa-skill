@@ -11,9 +11,7 @@ This is a skill for Amazon Alexa that allows users to get an overview of COVID-1
 
 I developed this skill during the lockdown period in Italy with the intention of publishing it on the Alexa Skill's marketplace and providing a useful service to users.
 
-Unfortunately, Amazon informed me that would not accept any skill regarding COVID-19.
-
-Consequently, I decided to open source it with the hope that it can be used as a basis for new developments by other developers.
+I decided to open source it with the hope that it can be used as a basis for new developments by other developers.
 
 ## :floppy_disk: Data Source
 
